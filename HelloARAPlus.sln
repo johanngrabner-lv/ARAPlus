@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.WebAppMitView", "AR
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.MyWPF", "ARAPlus.MyWPF\ARAPlus.MyWPF.csproj", "{C9456F30-D9DC-47BF-8A36-4140C71839D6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.CSharpGrundlagen", "ARAPlus.CSharpGrundlagen\ARAPlus.CSharpGrundlagen.csproj", "{6DFD68B2-9ACA-47F7-9D23-07DF5EE04A92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.OOPMitCSharp", "ARAPlus.OOPMitCSharp\ARAPlus.OOPMitCSharp.csproj", "{B9F67F46-ECC7-4534-A889-EE9AA55EC0BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{C9456F30-D9DC-47BF-8A36-4140C71839D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9456F30-D9DC-47BF-8A36-4140C71839D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9456F30-D9DC-47BF-8A36-4140C71839D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DFD68B2-9ACA-47F7-9D23-07DF5EE04A92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DFD68B2-9ACA-47F7-9D23-07DF5EE04A92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DFD68B2-9ACA-47F7-9D23-07DF5EE04A92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DFD68B2-9ACA-47F7-9D23-07DF5EE04A92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9F67F46-ECC7-4534-A889-EE9AA55EC0BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9F67F46-ECC7-4534-A889-EE9AA55EC0BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9F67F46-ECC7-4534-A889-EE9AA55EC0BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9F67F46-ECC7-4534-A889-EE9AA55EC0BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
