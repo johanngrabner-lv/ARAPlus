@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloARAPlus", "HelloARAPlus\HelloARAPlus.csproj", "{BB8AA416-DDB1-43C5-8AB4-CDC6C96745C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloARAPlus", "HelloARAPlus\HelloARAPlus.csproj", "{BB8AA416-DDB1-43C5-8AB4-CDC6C96745C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.AbfallLogic", "ARAPlus.AbfallLogic\ARAPlus.AbfallLogic.csproj", "{487FFE6D-A605-4F26-99CC-9EF591C88B52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.WebApp", "ARAPlus.WebApp\ARAPlus.WebApp.csproj", "{7255043B-0365-4764-A7D2-6936CF473BFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.WebAppMitView", "ARAPlus.WebAppMitView\ARAPlus.WebAppMitView.csproj", "{27D6D2F5-5209-4A6D-87C4-E1E630222FD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.MyWPF", "ARAPlus.MyWPF\ARAPlus.MyWPF.csproj", "{C9456F30-D9DC-47BF-8A36-4140C71839D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{BB8AA416-DDB1-43C5-8AB4-CDC6C96745C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB8AA416-DDB1-43C5-8AB4-CDC6C96745C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB8AA416-DDB1-43C5-8AB4-CDC6C96745C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{487FFE6D-A605-4F26-99CC-9EF591C88B52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{487FFE6D-A605-4F26-99CC-9EF591C88B52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{487FFE6D-A605-4F26-99CC-9EF591C88B52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{487FFE6D-A605-4F26-99CC-9EF591C88B52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7255043B-0365-4764-A7D2-6936CF473BFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7255043B-0365-4764-A7D2-6936CF473BFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7255043B-0365-4764-A7D2-6936CF473BFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7255043B-0365-4764-A7D2-6936CF473BFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27D6D2F5-5209-4A6D-87C4-E1E630222FD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27D6D2F5-5209-4A6D-87C4-E1E630222FD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27D6D2F5-5209-4A6D-87C4-E1E630222FD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27D6D2F5-5209-4A6D-87C4-E1E630222FD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9456F30-D9DC-47BF-8A36-4140C71839D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9456F30-D9DC-47BF-8A36-4140C71839D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9456F30-D9DC-47BF-8A36-4140C71839D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9456F30-D9DC-47BF-8A36-4140C71839D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
