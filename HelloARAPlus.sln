@@ -35,6 +35,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.Mod07", "ARAPlus.Mo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.PersistenceSample", "ARAPlus.PersistenceSample\ARAPlus.PersistenceSample.csproj", "{AAF636C0-94A6-4761-A406-24AC57F26476}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.DatabaseSample", "ARAPlus.DatabaseSample\ARAPlus.DatabaseSample.csproj", "{1F4F8739-B892-4ACA-BC17-89D2146DB861}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppDemo", "WebAppDemo\WebAppDemo.csproj", "{75C5FEB8-DA17-4877-B2FE-FC364140158F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +109,14 @@ Global
 		{AAF636C0-94A6-4761-A406-24AC57F26476}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAF636C0-94A6-4761-A406-24AC57F26476}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAF636C0-94A6-4761-A406-24AC57F26476}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F4F8739-B892-4ACA-BC17-89D2146DB861}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F4F8739-B892-4ACA-BC17-89D2146DB861}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F4F8739-B892-4ACA-BC17-89D2146DB861}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F4F8739-B892-4ACA-BC17-89D2146DB861}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75C5FEB8-DA17-4877-B2FE-FC364140158F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75C5FEB8-DA17-4877-B2FE-FC364140158F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75C5FEB8-DA17-4877-B2FE-FC364140158F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75C5FEB8-DA17-4877-B2FE-FC364140158F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
