@@ -51,7 +51,7 @@ namespace ARAPlus.DelegatesFuncActionEvents
 
             if (iPrint is Lager)
             { 
-                Lager lager =(Lager) iPrint;
+                Lager lager1 =(Lager) iPrint;
             }
 
 
