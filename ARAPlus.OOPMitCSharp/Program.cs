@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
 using System.Linq;
 
 namespace ARAPlus.OOPMitCSharp
@@ -8,6 +10,20 @@ namespace ARAPlus.OOPMitCSharp
     {
         static void Main(string[] args)
         {
+
+            Trace.Listeners.Add(new TextWriterTraceListener(
+        File.CreateText(@"c:\workshops\log.txt")));
+            Trace.AutoFlush = true;
+
+
+            Debug.WriteLine("Hello from Debug");
+            Trace.WriteLine("Hello from Debug");
+            Trace.TraceInformation("Info");
+            Trace.TraceError("Error");
+            Trace.WriteLine("Hello World");
+            
+
+
             Produkt produkt = new Produkt();
             produkt.Bezeichnung = "Handy";
             produkt.Preis = 120;

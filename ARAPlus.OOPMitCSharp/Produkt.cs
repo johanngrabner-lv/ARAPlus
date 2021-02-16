@@ -6,7 +6,7 @@ namespace ARAPlus.OOPMitCSharp
 {
     //POCO - Plain old CLR Object
     //DTO - Data Transfer objects
-    class Produkt
+    public class Produkt
     {
         public int ProduktId { get; set; }
         public string Bezeichnung { get; set; }
@@ -14,9 +14,9 @@ namespace ARAPlus.OOPMitCSharp
 
         public double CalcNettoPreis()
         {
-            double nettoPreis = 0;
-            nettoPreis = Preis/ 120 * 100;
-            return nettoPreis;
+            double result = 0;
+            result = Preis/ 120 * 100 +1 ;
+            return result;
         }
 
         //Overloading
@@ -33,7 +33,14 @@ namespace ARAPlus.OOPMitCSharp
             return nettoPreis;
         }
 
+        public double GetLengthBezeichnung()
+        {
+           return Bezeichnung.Length;
+        }
 
-
+        public double GetLengthBezeichnung(string v)
+        {
+            return 5;
+        }
     }
 }
