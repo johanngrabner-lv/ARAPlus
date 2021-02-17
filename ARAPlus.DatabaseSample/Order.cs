@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 #nullable disable
 
 namespace ARAPlus.DatabaseSample
 {
+    
     public partial class Order
     {
         public Order()
@@ -12,6 +15,7 @@ namespace ARAPlus.DatabaseSample
             OrderDetails = new HashSet<OrderDetail>();
         }
 
+        [Key]
         public long OrderId { get; set; }
         public string CustomerId { get; set; }
         public long? EmployeeId { get; set; }
@@ -20,6 +24,8 @@ namespace ARAPlus.DatabaseSample
         public byte[] ShippedDate { get; set; }
         public long? ShipVia { get; set; }
         public byte[] Freight { get; set; }
+
+        
         public string ShipName { get; set; }
         public string ShipAddress { get; set; }
         public string ShipCity { get; set; }

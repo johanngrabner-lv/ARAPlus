@@ -25,6 +25,9 @@ namespace ARAPlus.DatabaseSample
         public long? ReorderLevel { get; set; }
         public byte[] Discontinued { get; set; }
 
+        //.Include(p.Category)
+        //Navigation Properties p.Catgory.CategoryId
+        //c.Products
         public virtual Category Category { get; set; }
         public virtual Supplier Supplier { get; set; }
         public virtual ICollection<OrderDetail> OrderDetails { get; set; }

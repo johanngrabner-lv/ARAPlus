@@ -5,39 +5,49 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloARAPlus", "HelloARAPlus\HelloARAPlus.csproj", "{BB8AA416-DDB1-43C5-8AB4-CDC6C96745C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.AbfallLogic", "ARAPlus.AbfallLogic\ARAPlus.AbfallLogic.csproj", "{487FFE6D-A605-4F26-99CC-9EF591C88B52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARAPlus.AbfallLogic", "ARAPlus.AbfallLogic\ARAPlus.AbfallLogic.csproj", "{487FFE6D-A605-4F26-99CC-9EF591C88B52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.WebApp", "ARAPlus.WebApp\ARAPlus.WebApp.csproj", "{7255043B-0365-4764-A7D2-6936CF473BFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARAPlus.WebApp", "ARAPlus.WebApp\ARAPlus.WebApp.csproj", "{7255043B-0365-4764-A7D2-6936CF473BFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.WebAppMitView", "ARAPlus.WebAppMitView\ARAPlus.WebAppMitView.csproj", "{27D6D2F5-5209-4A6D-87C4-E1E630222FD9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARAPlus.WebAppMitView", "ARAPlus.WebAppMitView\ARAPlus.WebAppMitView.csproj", "{27D6D2F5-5209-4A6D-87C4-E1E630222FD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.MyWPF", "ARAPlus.MyWPF\ARAPlus.MyWPF.csproj", "{C9456F30-D9DC-47BF-8A36-4140C71839D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARAPlus.MyWPF", "ARAPlus.MyWPF\ARAPlus.MyWPF.csproj", "{C9456F30-D9DC-47BF-8A36-4140C71839D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.CSharpGrundlagen", "ARAPlus.CSharpGrundlagen\ARAPlus.CSharpGrundlagen.csproj", "{6DFD68B2-9ACA-47F7-9D23-07DF5EE04A92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARAPlus.CSharpGrundlagen", "ARAPlus.CSharpGrundlagen\ARAPlus.CSharpGrundlagen.csproj", "{6DFD68B2-9ACA-47F7-9D23-07DF5EE04A92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.OOPMitCSharp", "ARAPlus.OOPMitCSharp\ARAPlus.OOPMitCSharp.csproj", "{B9F67F46-ECC7-4534-A889-EE9AA55EC0BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARAPlus.OOPMitCSharp", "ARAPlus.OOPMitCSharp\ARAPlus.OOPMitCSharp.csproj", "{B9F67F46-ECC7-4534-A889-EE9AA55EC0BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitProduktTest", "XUnitProduktTest\XUnitProduktTest.csproj", "{9F706AD5-C73C-4540-A1F1-8134605FA055}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitProduktTest", "XUnitProduktTest\XUnitProduktTest.csproj", "{9F706AD5-C73C-4540-A1F1-8134605FA055}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.Mod06DLL", "ARAPlus.Mod06DLL\ARAPlus.Mod06DLL.csproj", "{90493160-4C78-46DB-86C9-328C8315C4FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARAPlus.Mod06DLL", "ARAPlus.Mod06DLL\ARAPlus.Mod06DLL.csproj", "{90493160-4C78-46DB-86C9-328C8315C4FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.Mod06ConsoleApp", "ARAPlus.Mod06ConsoleApp\ARAPlus.Mod06ConsoleApp.csproj", "{251C2C1D-C396-4866-AEDF-FE19F4E80129}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARAPlus.Mod06ConsoleApp", "ARAPlus.Mod06ConsoleApp\ARAPlus.Mod06ConsoleApp.csproj", "{251C2C1D-C396-4866-AEDF-FE19F4E80129}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.DelegatesFuncActionEvents", "ARAPlus.DelegatesFuncActionEvents\ARAPlus.DelegatesFuncActionEvents.csproj", "{BCC5F515-9EE5-4956-A6F1-8A2DCD776597}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARAPlus.DelegatesFuncActionEvents", "ARAPlus.DelegatesFuncActionEvents\ARAPlus.DelegatesFuncActionEvents.csproj", "{BCC5F515-9EE5-4956-A6F1-8A2DCD776597}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.WiederholungDienstag", "ARAPlus.WiederholungDienstag\ARAPlus.WiederholungDienstag.csproj", "{9DDC0F75-21E5-485A-A84C-5D43C782C0FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARAPlus.WiederholungDienstag", "ARAPlus.WiederholungDienstag\ARAPlus.WiederholungDienstag.csproj", "{9DDC0F75-21E5-485A-A84C-5D43C782C0FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProjectFahrzeug", "XUnitTestProjectFahrzeug\XUnitTestProjectFahrzeug.csproj", "{F783DCD6-CFA3-4420-974D-D03CAFA3A87A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitTestProjectFahrzeug", "XUnitTestProjectFahrzeug\XUnitTestProjectFahrzeug.csproj", "{F783DCD6-CFA3-4420-974D-D03CAFA3A87A}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DemoVB", "DemoVB\DemoVB.vbproj", "{EA98E05D-8CE2-4C50-9446-8902BF5976FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.Mod07", "ARAPlus.Mod07\ARAPlus.Mod07.csproj", "{D79ED339-D303-4F4D-BE5B-3DBA604FC8F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARAPlus.Mod07", "ARAPlus.Mod07\ARAPlus.Mod07.csproj", "{D79ED339-D303-4F4D-BE5B-3DBA604FC8F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.PersistenceSample", "ARAPlus.PersistenceSample\ARAPlus.PersistenceSample.csproj", "{AAF636C0-94A6-4761-A406-24AC57F26476}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARAPlus.PersistenceSample", "ARAPlus.PersistenceSample\ARAPlus.PersistenceSample.csproj", "{AAF636C0-94A6-4761-A406-24AC57F26476}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.DatabaseSample", "ARAPlus.DatabaseSample\ARAPlus.DatabaseSample.csproj", "{1F4F8739-B892-4ACA-BC17-89D2146DB861}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARAPlus.DatabaseSample", "ARAPlus.DatabaseSample\ARAPlus.DatabaseSample.csproj", "{1F4F8739-B892-4ACA-BC17-89D2146DB861}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppDemo", "WebAppDemo\WebAppDemo.csproj", "{75C5FEB8-DA17-4877-B2FE-FC364140158F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppDemo", "WebAppDemo\WebAppDemo.csproj", "{75C5FEB8-DA17-4877-B2FE-FC364140158F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WiederholungMittwoch", "WiederholungMittwoch\WiederholungMittwoch.csproj", "{3D097D69-D7C5-4C67-8D37-6F92506A796D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.ParallelFramework", "ARAPlus.ParallelFramework\ARAPlus.ParallelFramework.csproj", "{08EEB188-C9E6-4E85-8C69-C4EEDC9ECCAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.RazorPagesDemo", "ARAPlus.RazorPagesDemo\ARAPlus.RazorPagesDemo.csproj", "{F4E3AAA5-E607-4225-ACB2-3E82F4D7E3A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{C6C65311-0089-44F2-A223-438DFC3DCC41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.AspWebMitMVC", "ARAPlus.AspWebMitMVC\ARAPlus.AspWebMitMVC.csproj", "{72EEC105-A420-44E9-A0CB-C31ED9F01296}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +127,26 @@ Global
 		{75C5FEB8-DA17-4877-B2FE-FC364140158F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75C5FEB8-DA17-4877-B2FE-FC364140158F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75C5FEB8-DA17-4877-B2FE-FC364140158F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D097D69-D7C5-4C67-8D37-6F92506A796D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D097D69-D7C5-4C67-8D37-6F92506A796D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D097D69-D7C5-4C67-8D37-6F92506A796D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D097D69-D7C5-4C67-8D37-6F92506A796D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08EEB188-C9E6-4E85-8C69-C4EEDC9ECCAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08EEB188-C9E6-4E85-8C69-C4EEDC9ECCAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08EEB188-C9E6-4E85-8C69-C4EEDC9ECCAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08EEB188-C9E6-4E85-8C69-C4EEDC9ECCAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4E3AAA5-E607-4225-ACB2-3E82F4D7E3A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4E3AAA5-E607-4225-ACB2-3E82F4D7E3A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4E3AAA5-E607-4225-ACB2-3E82F4D7E3A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4E3AAA5-E607-4225-ACB2-3E82F4D7E3A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6C65311-0089-44F2-A223-438DFC3DCC41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6C65311-0089-44F2-A223-438DFC3DCC41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6C65311-0089-44F2-A223-438DFC3DCC41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6C65311-0089-44F2-A223-438DFC3DCC41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72EEC105-A420-44E9-A0CB-C31ED9F01296}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72EEC105-A420-44E9-A0CB-C31ED9F01296}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72EEC105-A420-44E9-A0CB-C31ED9F01296}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72EEC105-A420-44E9-A0CB-C31ED9F01296}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

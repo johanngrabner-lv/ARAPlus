@@ -1,13 +1,90 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
+
 namespace ARAPlus.DatabaseSample
 {
 
     class Program
     {
-        static void Main(string[] args)
+        private static void DisplayStates(IEnumerable<EntityEntry> entries)
+        {
+            foreach (var entry in entries)
+            {
+                Console.WriteLine($"Entity: {entry.Entity.GetType().Name},State: {entry.State.ToString()}");
+                
+            }
+        }
+
+        static async Task Main(string[] args)
+        {
+
+            Nullable<int> iV1;
+
+            int? iV2;
+
+            int i = 0;
+
+
+            using (NorthwindContext ctx = new NorthwindContext())
+            {
+                using (var tx = ctx.Database.BeginTransaction(System.Data.IsolationLevel.ReadCommitted))
+                {
+
+                    long l = 1;
+                    //Unchanged
+                    var product1PK = ctx.Products.Find(l);
+
+                    var product1Where = ctx.Products
+                        .Where(p => p.ProductName == "Chai").
+                        First();
+
+                    var pSimple = from pS in ctx.Products
+                                      //select Ps
+                                  select new { Id = pS.ProductId, Name = pS.QuantityPerUnit };
+                    //select productid, name from Products
+
+
+                    DisplayStates(ctx.ChangeTracker.Entries());
+
+                    //Changetracking entdeck änderungen
+                    //Modified
+                    product1PK.ProductName = "Chai Neu";
+                    DisplayStates(ctx.ChangeTracker.Entries());
+                    // product1PK.CategoryId = -7;
+                    product1PK.UnitsInStock = 12;
+                    product1PK.ProductName = "Chai";
+                    var cust = ctx.Customers.Find("ALFKI");
+                    //modified -- UPDATE
+                    cust.ContactName = "Johann Grabner";
+
+
+                    Customer neuerKunde = new Customer();
+                    neuerKunde.CustomerId = "GRABN";
+                    neuerKunde.ContactName = "Johann";
+                    neuerKunde.CompanyName = "Grabner";
+
+                    //Added
+                    ctx.Customers.Add(neuerKunde);
+                    //Insert
+
+                    await ctx.SaveChangesAsync();
+
+                    ctx.Remove(neuerKunde);
+                    ctx.SaveChanges();
+                    //Delete
+                    tx.Commit();
+                }
+
+
+            }
+        }
+
+            static void MainOld(string[] args)
         {
             //ADO.NET ActiveX Data Objects, Advanced Data Objects
             //DataProvider MS SQL OLEDB ODBC
