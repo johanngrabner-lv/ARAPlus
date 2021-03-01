@@ -13,7 +13,11 @@ namespace ARAPlus.AspWebMitMVC.Models
 
         [DataType(DataType.Date)]
         public DateTime ReleaseDate { get; set; }
+        [MinLength(2)]
         public string Genre { get; set; }
         public decimal Price { get; set; }
+        public string Rating { get; set; }
+
+        public string Demo { get; set; }
     }
 }

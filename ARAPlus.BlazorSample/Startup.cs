@@ -1,5 +1,7 @@
-using ARAPlus.AspWebMitMVC.Models;
+using ARAPlus.BlazorSample.Data;
+using ARAPlus.DatabaseSample;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
@@ -11,7 +13,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ARAPlus.AspWebMitMVC
+namespace ARAPlus.BlazorSample
 {
     public class Startup
     {
@@ -23,16 +25,18 @@ namespace ARAPlus.AspWebMitMVC
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
+        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews();
+            services.AddRazorPages();
+            services.AddServerSideBlazor();
+            services.AddSingleton<WeatherForecastService>();
+            string databasePath = @"C:\Workshops\ARAPlus\Sqlite\Tools\sqlite-tools-win32-x86-3340100\Northwind.db";
+            services.AddDbContext<NorthwindContext>(options =>
+   options.UseSqlite($"Data Source={databasePath}"));
 
-            //Dependency Injection
-            services.AddDbContext<MvcMovieContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("MvcMovieContext")));
-
-            services.AddDbContext<StichprobenContext>(options =>
-           options.UseSqlServer(Configuration.GetConnectionString("StichprobenContext")));
+            services.AddTransient
+  <INorthwindService, NorthwindService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -44,27 +48,20 @@ namespace ARAPlus.AspWebMitMVC
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                app.UseExceptionHandler("/Error");
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();
 
-            app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
-
-                endpoints.MapControllerRoute(
-                   name: "AraPlus",
-                   pattern: "Home/Index/");
-
+                endpoints.MapBlazorHub();
+                endpoints.MapFallbackToPage("/_Host");
             });
         }
     }

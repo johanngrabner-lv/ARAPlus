@@ -9,46 +9,22 @@ using ARAPlus.AspWebMitMVC.Models;
 
 namespace ARAPlus.AspWebMitMVC.Controllers
 {
-    public class MoviesController : Controller
+    public class StichprobesController : Controller
     {
-        private readonly MvcMovieContext _context;
+        private readonly StichprobenContext _context;
 
-        public MoviesController(MvcMovieContext context)
+        public StichprobesController(StichprobenContext context)
         {
             _context = context;
         }
 
-        // GET: Movies
-        public async Task<IActionResult> Index(string movieGenre, string searchString)
+        // GET: Stichprobes
+        public async Task<IActionResult> Index()
         {
-            IQueryable<string> genreQuery = from m in _context.Movie
-                                            orderby m.Genre
-                                            select m.Genre;
-
-            var movies = from m in _context.Movie
-                         select m;
-
-            if (!String.IsNullOrEmpty(searchString))
-            {
-                movies = movies.Where(s => s.Title.Contains(searchString));
-            }
-
-            if (!string.IsNullOrEmpty(movieGenre))
-            {
-                movies = movies.Where(x => x.Genre == movieGenre);
-            }
-
-            var movieGenreVM = new MovieGenreViewModel
-            {
-                Genres = new SelectList(await genreQuery.Distinct().ToListAsync()),
-                Movies = await movies.ToListAsync()
-            };
-
-            //return View(await movies.ToListAsync());
-            return View(movieGenreVM);
+            return View(await _context.Stichprobe.ToListAsync());
         }
 
-        // GET: Movies/Details/5
+        // GET: Stichprobes/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -56,44 +32,46 @@ namespace ARAPlus.AspWebMitMVC.Controllers
                 return NotFound();
             }
 
-            var movie = await _context.Movie
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (movie == null)
+            var stichprobe = await _context.Stichprobe
+                .FirstOrDefaultAsync(m => m.StichprobeId == id);
+            if (stichprobe == null)
             {
                 return NotFound();
             }
 
-            return View(movie);
+            return View(stichprobe);
         }
 
-        // GET: Movies/Create
+        // GET: Stichprobes/Create
         [HttpGet]
         public IActionResult Create()
         {
-            Movie m = new Movie();
-            m.Genre = "Fantasie";
-            m.Price = 20.5M;
-            m.Title = "Bitte Titel";
-            return View(m);
+            ViewBag.Anweisung = "Bitte füllen Sie die Stichprobe aus";
+
+            ViewBag.Stichprobe = new Stichprobe() { Gefahrengut = true, Name="Ein TEst für ViewBag" };
+
+            return View();
         }
 
-        // POST: Movies/Create
+        // POST: Stichprobes/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,ReleaseDate,Genre,Price")] Movie movie)
+        public async Task<IActionResult> Create([Bind("StichprobeId,Name,Abgabedatum,Gefahrengut")] Stichprobe stichprobe)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(movie);
+                _context.Add(stichprobe);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(movie);
+            return View(stichprobe);
+            //return View("en",stichprobe);
+            // return View("de", stichprobe);
         }
 
-        // GET: Movies/Edit/5
+        // GET: Stichprobes/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -101,22 +79,22 @@ namespace ARAPlus.AspWebMitMVC.Controllers
                 return NotFound();
             }
 
-            var movie = await _context.Movie.FindAsync(id);
-            if (movie == null)
+            var stichprobe = await _context.Stichprobe.FindAsync(id);
+            if (stichprobe == null)
             {
                 return NotFound();
             }
-            return View(movie);
+            return View(stichprobe);
         }
 
-        // POST: Movies/Edit/5
+        // POST: Stichprobes/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,ReleaseDate,Genre,Price")] Movie movie)
+        public async Task<IActionResult> Edit(int id, [Bind("StichprobeId,Name,Abgabedatum,Gefahrengut")] Stichprobe stichprobe)
         {
-            if (id != movie.Id)
+            if (id != stichprobe.StichprobeId)
             {
                 return NotFound();
             }
@@ -125,13 +103,12 @@ namespace ARAPlus.AspWebMitMVC.Controllers
             {
                 try
                 {
-                    //Modified
-                    _context.Update(movie);
+                    _context.Update(stichprobe);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!MovieExists(movie.Id))
+                    if (!StichprobeExists(stichprobe.StichprobeId))
                     {
                         return NotFound();
                     }
@@ -142,10 +119,10 @@ namespace ARAPlus.AspWebMitMVC.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(movie);
+            return View(stichprobe);
         }
 
-        // GET: Movies/Delete/5
+        // GET: Stichprobes/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -153,30 +130,30 @@ namespace ARAPlus.AspWebMitMVC.Controllers
                 return NotFound();
             }
 
-            var movie = await _context.Movie
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (movie == null)
+            var stichprobe = await _context.Stichprobe
+                .FirstOrDefaultAsync(m => m.StichprobeId == id);
+            if (stichprobe == null)
             {
                 return NotFound();
             }
 
-            return View(movie);
+            return View(stichprobe);
         }
 
-        // POST: Movies/Delete/5
+        // POST: Stichprobes/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var movie = await _context.Movie.FindAsync(id);
-            _context.Movie.Remove(movie);
+            var stichprobe = await _context.Stichprobe.FindAsync(id);
+            _context.Stichprobe.Remove(stichprobe);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool MovieExists(int id)
+        private bool StichprobeExists(int id)
         {
-            return _context.Movie.Any(e => e.Id == id);
+            return _context.Stichprobe.Any(e => e.StichprobeId == id);
         }
     }
 }

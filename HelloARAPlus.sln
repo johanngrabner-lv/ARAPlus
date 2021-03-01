@@ -39,15 +39,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARAPlus.DatabaseSample", "A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppDemo", "WebAppDemo\WebAppDemo.csproj", "{75C5FEB8-DA17-4877-B2FE-FC364140158F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WiederholungMittwoch", "WiederholungMittwoch\WiederholungMittwoch.csproj", "{3D097D69-D7C5-4C67-8D37-6F92506A796D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WiederholungMittwoch", "WiederholungMittwoch\WiederholungMittwoch.csproj", "{3D097D69-D7C5-4C67-8D37-6F92506A796D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.ParallelFramework", "ARAPlus.ParallelFramework\ARAPlus.ParallelFramework.csproj", "{08EEB188-C9E6-4E85-8C69-C4EEDC9ECCAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARAPlus.ParallelFramework", "ARAPlus.ParallelFramework\ARAPlus.ParallelFramework.csproj", "{08EEB188-C9E6-4E85-8C69-C4EEDC9ECCAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.RazorPagesDemo", "ARAPlus.RazorPagesDemo\ARAPlus.RazorPagesDemo.csproj", "{F4E3AAA5-E607-4225-ACB2-3E82F4D7E3A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARAPlus.RazorPagesDemo", "ARAPlus.RazorPagesDemo\ARAPlus.RazorPagesDemo.csproj", "{F4E3AAA5-E607-4225-ACB2-3E82F4D7E3A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{C6C65311-0089-44F2-A223-438DFC3DCC41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{C6C65311-0089-44F2-A223-438DFC3DCC41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.AspWebMitMVC", "ARAPlus.AspWebMitMVC\ARAPlus.AspWebMitMVC.csproj", "{72EEC105-A420-44E9-A0CB-C31ED9F01296}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARAPlus.AspWebMitMVC", "ARAPlus.AspWebMitMVC\ARAPlus.AspWebMitMVC.csproj", "{72EEC105-A420-44E9-A0CB-C31ED9F01296}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.BlazorSample", "ARAPlus.BlazorSample\ARAPlus.BlazorSample.csproj", "{09B1FF11-A557-4A0C-BC65-0D9B86FFCDA2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -147,6 +149,10 @@ Global
 		{72EEC105-A420-44E9-A0CB-C31ED9F01296}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72EEC105-A420-44E9-A0CB-C31ED9F01296}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72EEC105-A420-44E9-A0CB-C31ED9F01296}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09B1FF11-A557-4A0C-BC65-0D9B86FFCDA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09B1FF11-A557-4A0C-BC65-0D9B86FFCDA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09B1FF11-A557-4A0C-BC65-0D9B86FFCDA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09B1FF11-A557-4A0C-BC65-0D9B86FFCDA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
