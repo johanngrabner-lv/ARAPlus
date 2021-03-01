@@ -53,6 +53,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARAPlus.BlazorSample", "ARA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.WpfDemoNet5", "ARAPlus.WpfDemoNet5\ARAPlus.WpfDemoNet5.csproj", "{EAFE2492-9F4B-4CB9-9363-120AA6619AB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.APIDemoWeb", "ARAPlus.APIDemoWeb\ARAPlus.APIDemoWeb.csproj", "{A5CC69C0-355A-486E-B3E1-8CD081F3A4C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.ApiConsumerConsole", "ARAPlus.ApiConsumerConsole\ARAPlus.ApiConsumerConsole.csproj", "{710524C8-C727-4C89-92A8-61AF6D74BA22}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -159,6 +163,14 @@ Global
 		{EAFE2492-9F4B-4CB9-9363-120AA6619AB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAFE2492-9F4B-4CB9-9363-120AA6619AB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAFE2492-9F4B-4CB9-9363-120AA6619AB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5CC69C0-355A-486E-B3E1-8CD081F3A4C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5CC69C0-355A-486E-B3E1-8CD081F3A4C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5CC69C0-355A-486E-B3E1-8CD081F3A4C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5CC69C0-355A-486E-B3E1-8CD081F3A4C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{710524C8-C727-4C89-92A8-61AF6D74BA22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{710524C8-C727-4C89-92A8-61AF6D74BA22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{710524C8-C727-4C89-92A8-61AF6D74BA22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{710524C8-C727-4C89-92A8-61AF6D74BA22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
