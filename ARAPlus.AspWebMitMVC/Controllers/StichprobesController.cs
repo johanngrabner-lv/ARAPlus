@@ -21,7 +21,15 @@ namespace ARAPlus.AspWebMitMVC.Controllers
         // GET: Stichprobes
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Stichprobe.ToListAsync());
+           //return View(await );
+
+            StichprobenViewModel vm = new StichprobenViewModel();
+            vm.Stichproben = await _context.Stichprobe.ToListAsync();
+            vm.AnzahlGefahrengut = vm.Stichproben.Where(s => s.Gefahrengut == true).Count();
+            vm.LetztAbgabe = vm.Stichproben.Max(s => s.Abgabedatum);
+
+            return View(vm);
+
         }
 
         // GET: Stichprobes/Details/5

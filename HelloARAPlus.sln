@@ -49,7 +49,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "WebAppli
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARAPlus.AspWebMitMVC", "ARAPlus.AspWebMitMVC\ARAPlus.AspWebMitMVC.csproj", "{72EEC105-A420-44E9-A0CB-C31ED9F01296}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.BlazorSample", "ARAPlus.BlazorSample\ARAPlus.BlazorSample.csproj", "{09B1FF11-A557-4A0C-BC65-0D9B86FFCDA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARAPlus.BlazorSample", "ARAPlus.BlazorSample\ARAPlus.BlazorSample.csproj", "{09B1FF11-A557-4A0C-BC65-0D9B86FFCDA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARAPlus.WpfDemoNet5", "ARAPlus.WpfDemoNet5\ARAPlus.WpfDemoNet5.csproj", "{EAFE2492-9F4B-4CB9-9363-120AA6619AB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -153,6 +155,10 @@ Global
 		{09B1FF11-A557-4A0C-BC65-0D9B86FFCDA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09B1FF11-A557-4A0C-BC65-0D9B86FFCDA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09B1FF11-A557-4A0C-BC65-0D9B86FFCDA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAFE2492-9F4B-4CB9-9363-120AA6619AB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAFE2492-9F4B-4CB9-9363-120AA6619AB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAFE2492-9F4B-4CB9-9363-120AA6619AB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAFE2492-9F4B-4CB9-9363-120AA6619AB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

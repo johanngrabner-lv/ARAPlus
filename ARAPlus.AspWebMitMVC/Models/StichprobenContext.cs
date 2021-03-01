@@ -12,7 +12,18 @@ namespace ARAPlus.AspWebMitMVC.Models
             : base(options)
         {
         }
+        public StichprobenContext()
+        {
+
+        }
 
         public DbSet<Stichprobe> Stichprobe { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+          
+                optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=StichprobenDB;Trusted_Connection=True;MultipleActiveResultSets=true");
+          
+        }
     }
 }

@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ARAPlus.AspWebMitMVC.Models.Stichprobe>
+﻿@model ARAPlus.AspWebMitMVC.Models.StichprobenViewModel
 
 @{
     ViewData["Title"] = "Index";
@@ -6,6 +6,8 @@
 
 <h1>Index</h1>
 
+Anzahl Gefahrengüter: @Model.AnzahlGefahrengut<br />
+Letzt Abgabedatuem: @Model.LetztAbgabe
 <p>
     <a asp-action="Create">Create New</a>
 </p>
@@ -13,35 +15,36 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Name)
+                @Html.DisplayNameFor(model => Model.Stichproben[0].Name)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Abgabedatum)
+                @Html.DisplayNameFor(model => Model.Stichproben[0].Abgabedatum)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Gefahrengut)
+                @Html.DisplayNameFor(model => Model.Stichproben[0].Gefahrengut)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Abgabedatum)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Gefahrengut)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.StichprobeId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.StichprobeId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.StichprobeId">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model.Stichproben)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Abgabedatum)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Gefahrengut)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.StichprobeId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.StichprobeId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.StichprobeId">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
