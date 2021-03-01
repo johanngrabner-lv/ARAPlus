@@ -25,6 +25,16 @@ namespace ARAPlus.AspWebMitMVC.Controllers
 
             StichprobenViewModel vm = new StichprobenViewModel();
             vm.Stichproben = await _context.Stichprobe.ToListAsync();
+
+            foreach (var item in vm.Stichproben)
+            {
+                item.Details = new List<Detail>();
+            }
+
+            vm.Stichproben[0].Details = new List<Detail>();
+            vm.Stichproben[0].Details.Add(new Detail() { DetailId = 7,Beschreibung="ein Test V1" });
+            vm.Stichproben[0].Details.Add(new Detail() { DetailId = 12, Beschreibung="Dummy v5" });
+
             vm.AnzahlGefahrengut = vm.Stichproben.Where(s => s.Gefahrengut == true).Count();
             vm.LetztAbgabe = vm.Stichproben.Max(s => s.Abgabedatum);
 

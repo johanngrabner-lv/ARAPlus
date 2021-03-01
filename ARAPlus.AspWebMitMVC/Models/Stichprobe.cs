@@ -6,6 +6,13 @@ using System.Threading.Tasks;
 
 namespace ARAPlus.AspWebMitMVC.Models
 {
+    public class Detail
+    {
+        public int DetailId { get; set; }
+        public string Beschreibung { get; set; }
+
+        public Stichprobe Stichprobe { get; set; }
+    }
     public class Stichprobe
     {
         public int StichprobeId { get; set; }
@@ -14,5 +21,6 @@ namespace ARAPlus.AspWebMitMVC.Models
         [Required]
         public DateTime Abgabedatum { get; set; }
         public bool Gefahrengut { get; set; }
+        public List<Detail> Details { get; set; }
     }
 }

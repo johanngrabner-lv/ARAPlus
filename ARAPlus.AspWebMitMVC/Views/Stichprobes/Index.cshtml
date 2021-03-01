@@ -29,16 +29,28 @@ Letzt Abgabedatuem: @Model.LetztAbgabe
     <tbody>
         @foreach (var item in Model.Stichproben)
         {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Name)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Abgabedatum)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Gefahrengut)
-                </td>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Abgabedatum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gefahrengut)
+            </td>
+            <td>
+                <table>
+                    @foreach (var detail in item.Details)
+                    {
+                    <tr>
+                        <td>@detail.DetailId  </td>
+                        <td>@detail.Beschreibung</td>
+                    </tr>
+                        
+                    }
+                </table>
+            </td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.StichprobeId">Edit</a> |
                     <a asp-action="Details" asp-route-id="@item.StichprobeId">Details</a> |
